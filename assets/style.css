@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px !important;
+}
+
+@font-face {
+    font-family: 'go-b';
+    src: url(./fonts/Gobold-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'go-l';
+    src: url(./fonts/Gobold-Light.ttf);
+}
+
+@font-face {
+    font-family: 'go-r';
+    src: url(./fonts/Gobold-Regular.ttf);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul#primary-navigation {
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black !important;
+}
+
+.logo{
+    height: 110px;
+    width: 210px;
+}
+
+.nav-mobile, .mobile-pages{
+    display: none;
+}
+
+nav ul li a{
+    color: #FFF;
+    font-family: 'go-b';
+    font-size: 20px;
+    margin: 0 25px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover{
+    color: #D3BA2A;
+}
+
+.mobile-pages ul li a{
+    color: #FFF;
+    font-family: 'go-b';
+    font-size: 20px;
+    margin: 0 25px;
+    transition: all 0.3s;
+}
+
+.mobile-pages ul li a:hover{
+    color: #D3BA2A;
+}
+
+.active {
+    position: fixed;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+    z-index: 2;
+}
+
+/* Mobile Nav bar */
+
+/* Home Header Start */
+
+.home-header{
+    background: url(./images/1x/1x/overlay-header.png), url(./images/1x/1x/background-header.png);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+
+.home-header-kol-2 .box{
+    width: 80px;
+    height: 180px;
+    background: url(./images/1x/1x/grad-border.png);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+
+/* Home Header End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile-Screen */
+
+@media(max-width: 576px) { 
+
+    .nav-mobile{
+        display: block;
+    }
+
+    .mobile-pages{
+        display: block;
+    }
+
+    .nav-dekstop{
+        display: none;
+    }
+
+    .mobile-pages {
+        margin-left: 100%;
+        transition: all 0.6s;
+    }
+
+    i#open, i#close {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    #close{
+        display: none;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    #open{
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    .logo{
+        height: 82px;
+        width: 150px;
+    }
+
+    .mobile-pages ul li {
+        text-align: center;
+    }
+
+    .mobile-pages {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -90px;
+        background-color: #000000c2;
+        position: fixed;
+        top: 90px;
+        z-index: 1;
+    }
+
+    .mobile-pages ul li {
+        margin: 20px 0;
+    }
+
+    .container .row div {
+        overflow: hidden;
+    }
+
+    div#custom .row .col-12 {
+        padding: 0px;
+    }
+
+    #custom-nav{
+        padding: 0 15px;
+    }
+
+    .home-header{
+        height: 700px;
+    }
+}
+
+
+
+/* Tablet-Screen */
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    nav ul li a{
+        font-size: 16px;
+        margin: 0 18px;
+    }
+
+    .logo{
+        height: 90px;
+        width: 175px;
+    }
+
+    .home-header{
+        min-height: 600px;
+    }  
+   
+}
+
+
+
+/* Laptop-Screen */
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+
+    .home-header{
+        min-height: 750px;
+    }
+}
+
+
+
+/* Dekstop-Screen */
+
+@media (min-width: 1201px) and (max-width: 1450px) { 
+
+    .home-header{
+        min-height: 800px;
+    }
+}
+
+
+
+/* 4k-Screen */
+
+@media (min-width: 1450px) and (max-width: 2560px) { 
+
+    .home-header{
+        min-height: 1200px;
+    }
+ 
+}
